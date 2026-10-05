@@ -148,8 +148,8 @@ end
         @testset "$op" for op in test_operators_2_to_1(Val(Symbol(m)))
             @test all(
                 correct_classification_2_to_1(
-                        op, random_first_input(op), random_second_input(op); atol = DEFAULT_ATOL
-                    ) for _ in 1:DEFAULT_TRIALS
+                    op, random_first_input(op), random_second_input(op); atol = DEFAULT_ATOL
+                ) for _ in 1:DEFAULT_TRIALS
             )
             yield()
         end
