@@ -43,7 +43,7 @@ const DOC_KWARGS = """# Keyword arguments
   Defaults to `false`.
 
 If support for further pattern representations is needed, please open a feature request:
-https://github.com/adrhill/SparseConnectivityTracer.jl/issues
+https://github.com/JuliaDiff/SparseConnectivityTracer.jl/issues
 """
 
 """

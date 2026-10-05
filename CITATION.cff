@@ -10,7 +10,7 @@ authors:
 title: "SparseConnectivityTracer.jl"
 version: 0.1.0
 date-released: 2024-04-22
-url: "https://github.com/adrhill/SparseConnectivityTracer.jl"
+url: "https://github.com/JuliaDiff/SparseConnectivityTracer.jl"
 preferred-citation:
   type: article
   authors:

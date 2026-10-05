@@ -47,7 +47,7 @@ jobs:
       - uses: codecov/codecov-action@v7
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: adrhill/SparseConnectivityTracer.jl
+          slug: JuliaDiff/SparseConnectivityTracer.jl
           files: lcov.info
   docs:
     name: Documentation

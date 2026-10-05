@@ -18,7 +18,7 @@ makedocs(;
     authors = "Adrian Hill <gh@adrianhill.de>",
     sitename = "SparseConnectivityTracer.jl",
     format = Documenter.HTML(;
-        canonical = "https://adrhill.github.io/SparseConnectivityTracer.jl",
+        canonical = "https://juliadiff.github.io/SparseConnectivityTracer.jl",
         edit_link = "main",
         assets = ["assets/favicon.ico"],
     ),
@@ -35,4 +35,4 @@ makedocs(;
     warnonly = [:missing_docs],
 )
 
-deploydocs(; repo = "github.com/adrhill/SparseConnectivityTracer.jl", devbranch = "main")
+deploydocs(; repo = "github.com/JuliaDiff/SparseConnectivityTracer.jl", devbranch = "main")
