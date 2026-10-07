@@ -17,7 +17,7 @@ to improve the performance of your functions or to work around some of SCT's [li
 ## Generated overloads
 
 !!! tip "Copy one of our package extensions"
-    The easiest way to add overloads is to copy one of our package extensions, [e.g. our NNlib extension](https://github.com/adrhill/SparseConnectivityTracer.jl/blob/main/ext/SparseConnectivityTracerNNlibExt.jl), and to modify it.
+    The easiest way to add overloads is to copy one of our package extensions, [e.g. our NNlib extension](https://github.com/JuliaDiff/SparseConnectivityTracer.jl/blob/main/ext/SparseConnectivityTracerNNlibExt.jl), and to modify it.
     Please upstream your additions by opening a pull request! We will help you out to get your feature merged.
 
 ### Operator classification
@@ -132,7 +132,7 @@ You are required to call the function that matches your type of operator.
 
 ### Example
 
-For some examples on how to overload methods, take a look at our [package extensions](https://github.com/adrhill/SparseConnectivityTracer.jl/tree/main/ext).
+For some examples on how to overload methods, take a look at our [package extensions](https://github.com/JuliaDiff/SparseConnectivityTracer.jl/tree/main/ext).
 Let's look at the `relu` activation function from `ext/SparseConnectivityTracerNNlibExt.jl`, which is a 1-to-1 operator defined as $\text{relu}(x) = \text{max}(0, x)$.
 
 #### Step 1: Classification

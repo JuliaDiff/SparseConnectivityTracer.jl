@@ -639,7 +639,7 @@ end
     end
     @testset "Local" begin
         @testset "$P" for P in (Float32, BigFloat)
-            # https://github.com/adrhill/SparseConnectivityTracer.jl/issues/235
+            # https://github.com/JuliaDiff/SparseConnectivityTracer.jl/issues/235
 
             A_p = rand(P, 2, 2)
             A_d = Dual.(A_p, A_t)

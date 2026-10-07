@@ -38,4 +38,4 @@ Please note that the `DiffCache` from
 [PreallocationTools.jl](https://github.com/SciML/PreallocationTools.jl)
 can be used to make caches compatible with both
 [ForwardDiff.jl](https://github.com/JuliaDiff/ForwardDiff.jl) and
-[SparseConnectivityTracer.jl](https://github.com/adrhill/SparseConnectivityTracer.jl/).
+[SparseConnectivityTracer.jl](https://github.com/JuliaDiff/SparseConnectivityTracer.jl/).

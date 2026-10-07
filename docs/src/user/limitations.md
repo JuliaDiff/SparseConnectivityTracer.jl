@@ -3,10 +3,10 @@
 ## Sparsity patterns are conservative approximations
 
 Sparsity patterns returned by SparseConnectivityTracer (SCT) can in some cases be overly conservative, meaning that they might contain "too many ones".
-If you observe an overly conservative pattern, [please open a feature request](https://github.com/adrhill/SparseConnectivityTracer.jl/issues) so we know where to add more method overloads to increase the sparsity.
+If you observe an overly conservative pattern, [please open a feature request](https://github.com/JuliaDiff/SparseConnectivityTracer.jl/issues) so we know where to add more method overloads to increase the sparsity.
 
 !!! warning "SCT's no-false-negatives policy"
-    If you ever observe a sparsity pattern that contains too many zeros, we urge you to [open a bug report](https://github.com/adrhill/SparseConnectivityTracer.jl/issues)!
+    If you ever observe a sparsity pattern that contains too many zeros, we urge you to [open a bug report](https://github.com/JuliaDiff/SparseConnectivityTracer.jl/issues)!
 
 ## Function must be composed of generic Julia functions
 
