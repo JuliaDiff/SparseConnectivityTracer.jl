@@ -39,6 +39,8 @@ jac_inconsistencies = []
 hess_inconsistencies = []
 
 @testset "$name" for name in OPTIMIZATION_PROBLEM_NAMES
+    # JuMP calls `typemax(π)` on the variable bound, which errors on Julia < 1.11
+    VERSION < v"1.11" && name === :polygon && continue
     @info "$(now()) - $name"
 
     (jac_sparsity_sct, hess_sparsity_sct) = compute_jac_and_hess_sparsity_sct(name)

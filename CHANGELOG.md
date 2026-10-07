@@ -1,5 +1,9 @@
 # SparseConnectivityTracer.jl
 
+## Version `v1.2.4`
+* ![Maintenance][badge-maintenance] Skip `polygon` NLPModels test on Julia < 1.11 ([#331])
+* ![Maintenance][badge-maintenance] Transfer repository to JuliaDiff ([#330])
+
 ## Version `v1.2.3`
 * ![Bugfix][badge-bugfix] Fix `MissingPrimalError` in reductions of tracer `Fill`s with FillArrays.jl 1.17 ([#328])
 * ![Maintenance][badge-maintenance] Allow LogExpFunctions.jl 1.x ([#327])
@@ -173,6 +177,8 @@ This release is only breaking for users who touched unexported internals.
 [badge-maintenance]: https://img.shields.io/badge/maintenance-gray.svg
 [badge-docs]: https://img.shields.io/badge/docs-orange.svg
 
+[#331]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/331
+[#330]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/330
 [#328]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/328
 [#327]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/327
 [#322]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/322
