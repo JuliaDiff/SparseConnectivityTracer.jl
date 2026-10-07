@@ -1,8 +1,8 @@
 # SparseConnectivityTracer.jl
 
 ## Version `v1.2.4`
-* ![Maintenance][badge-maintenance] Skip `polygon` NLPModels test on Julia < 1.11 ([#331])
 * ![Maintenance][badge-maintenance] Transfer repository to JuliaDiff ([#330])
+* ![Maintenance][badge-maintenance] Skip `polygon` NLPModels test on Julia 1.10 ([#331])
 
 ## Version `v1.2.3`
 * ![Bugfix][badge-bugfix] Fix `MissingPrimalError` in reductions of tracer `Fill`s with FillArrays.jl 1.17 ([#328])
