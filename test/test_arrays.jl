@@ -762,10 +762,20 @@ end
             @test_nowarn dot(sx, tA, ry)
             @test_nowarn dot(rx, tA, sy)
             @test_nowarn dot(sx, tA, sy)
-            @test_throws MissingPrimalError dot(sx, tA, ty)
-            @test_throws MissingPrimalError dot(sx, rA, ty)
             @test_nowarn dot(rx, sA, ty)
             @test_nowarn dot(sx, sA, ty)
+
+            @testset "JuliaLang/LinearAlgebra.jl#1842" begin
+                # https://github.com/JuliaLang/LinearAlgebra.jl/pull/1842
+                fixed = v"1.10.14-" <= VERSION < v"1.11-" || v"1.13.4-" <= VERSION < v"1.14-" || VERSION >= v"1.14.0-beta1"
+                if fixed
+                    @test_nowarn dot(sx, tA, ty)
+                    @test_nowarn dot(sx, rA, ty)
+                else
+                    @test_throws MissingPrimalError dot(sx, tA, ty)
+                    @test_throws MissingPrimalError dot(sx, rA, ty)
+                end
+            end
         end
     end
 end
