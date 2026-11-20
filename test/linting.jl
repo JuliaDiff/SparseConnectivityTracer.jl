@@ -23,7 +23,7 @@ end
 if VERSION > v"1.11" # JET v0.10 requires Julia v1.12
     @testset "JET tests" begin
         @info "...with JET.jl"
-        JET.test_package(SparseConnectivityTracer; target_defined_modules = true)
+        JET.test_package(SparseConnectivityTracer; target_modules = (SparseConnectivityTracer,))
     end
 end
 
