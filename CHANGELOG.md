@@ -1,11 +1,17 @@
 # SparseConnectivityTracer.jl
 
+## Version `v1.2.5`
+* ![Maintenance][badge-maintenance] Expect sparse `dot(x, A, y)` to work in tests on Julia versions with LinearAlgebra.jl#1842 ([#332])
+* ![Maintenance][badge-maintenance] Allow JET.jl 0.12 and 0.13 to run tests on Julia 1.13 ([#333])
+* ![Maintenance][badge-maintenance] Install Julia in the Runic formatting CI job ([#335])
+
 ## Version `v1.2.4`
 * ![Maintenance][badge-maintenance] Transfer repository to JuliaDiff ([#330])
 * ![Maintenance][badge-maintenance] Skip `polygon` NLPModels test on Julia 1.10 ([#331])
 
 ## Version `v1.2.3`
 * ![Bugfix][badge-bugfix] Fix `MissingPrimalError` in reductions of tracer `Fill`s with FillArrays.jl 1.17 ([#328])
+* ![Bugfix][badge-bugfix] Fix `MethodError` in `ifelse` when both branches are constants ([#325])
 * ![Maintenance][badge-maintenance] Allow LogExpFunctions.jl 1.x ([#327])
 
 ## Version `v1.2.2`
@@ -177,10 +183,14 @@ This release is only breaking for users who touched unexported internals.
 [badge-maintenance]: https://img.shields.io/badge/maintenance-gray.svg
 [badge-docs]: https://img.shields.io/badge/docs-orange.svg
 
-[#331]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/331
-[#330]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/330
+[#335]: https://github.com/JuliaDiff/SparseConnectivityTracer.jl/pull/335
+[#333]: https://github.com/JuliaDiff/SparseConnectivityTracer.jl/pull/333
+[#332]: https://github.com/JuliaDiff/SparseConnectivityTracer.jl/pull/332
+[#331]: https://github.com/JuliaDiff/SparseConnectivityTracer.jl/pull/331
+[#330]: https://github.com/JuliaDiff/SparseConnectivityTracer.jl/pull/330
 [#328]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/328
 [#327]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/327
+[#325]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/325
 [#322]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/322
 [#292]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/292
 [#290]: https://github.com/adrhill/SparseConnectivityTracer.jl/pull/290
